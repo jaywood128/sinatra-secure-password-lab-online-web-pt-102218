@@ -39,7 +39,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    
+
     if user && user.authenticate(params[:password]) && user[:username] != ""
       session[:user_id] = user.id
 			redirect "/account"
