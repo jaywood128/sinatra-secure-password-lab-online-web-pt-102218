@@ -17,6 +17,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/signup" do
+    binding.pry
     #your code here
 
   end
