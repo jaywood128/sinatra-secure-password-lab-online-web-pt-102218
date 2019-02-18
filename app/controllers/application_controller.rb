@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
 
     if user && user.authenticate(params[:password])
 
-    ##your code here
+    end
   end
 
   get "/failure" do
