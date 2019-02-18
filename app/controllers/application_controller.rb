@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     if !user[:username] == ""
       redirect '/account'
     else
-      erb :failure
+      redirect '/failure'
     end
 
   end
