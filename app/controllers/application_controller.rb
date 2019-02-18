@@ -40,6 +40,9 @@ class ApplicationController < Sinatra::Base
 
   post "/login" do
     binding.pry
+
+    if user && user.authenticate(params[:password])
+
     ##your code here
   end
 
